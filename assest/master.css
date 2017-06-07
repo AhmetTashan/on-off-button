@@ -1,0 +1,75 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400&subset=latin-ext";
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.row {
+  margin-top: 50px; }
+  .row .col {
+    float: left; }
+    .row .col.s2 {
+      width: calc(16.66667% - 15px);
+      margin-right: 15px;
+      text-align: right;
+      font-weight: bold; }
+    .row .col.s10 {
+      width: 83.33333%; }
+  .row:after, .row:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both; }
+
+.info {
+  font-size: 14px;
+  margin-top: 10px; }
+
+/*
+	on off button
+*/
+.switches {
+  display: block; }
+  .switches label {
+    cursor: pointer; }
+    .switches label input[type=checkbox] {
+      display: none; }
+      .switches label input[type=checkbox]:checked + i {
+        background-color: #2ecc71; }
+        .switches label input[type=checkbox]:checked + i:before {
+          right: -3px;
+          left: auto; }
+        .switches label input[type=checkbox]:checked + i + #on {
+          display: block; }
+          .switches label input[type=checkbox]:checked + i + #on + #off {
+            display: none; }
+    .switches label i {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 15px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px; }
+      .switches label i:before {
+        position: absolute;
+        left: -3px;
+        top: -5px;
+        display: block;
+        content: '';
+        width: 25px;
+        height: 25px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+    .switches label #on, .switches label #off {
+      font-weight: normal;
+      margin-top: 10px; }
+    .switches label #on {
+      display: none; }
+  .switches:hover label i {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); }
+
+/*# sourceMappingURL=master.css.map */
