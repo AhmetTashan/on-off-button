@@ -10,8 +10,8 @@ Simple use:
     <label>
         <input type="checkbox" id="button" checked>
         <i></i>
-        <span id="on">Button <strong>enabled.</strong></span>
-        <span id="off">Button <strong>disabled.</strong></span>
+        <span id="on">Button enabled.</span>
+        <span id="off">Button disabled.</span>
     </label>
 </div>
 ```
